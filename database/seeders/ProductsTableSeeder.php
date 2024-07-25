@@ -18,7 +18,7 @@ class ProductsTableSeeder extends Seeder
         $faker = Faker::create();
 
         // Generate multiple products with random data
-        $numberOfProducts = 10; // Adjust the number of products you want to create
+        $numberOfProducts = 20; // Adjust the number of products you want to create
 
         for ($i = 0; $i < $numberOfProducts; $i++) {
             Product::create([

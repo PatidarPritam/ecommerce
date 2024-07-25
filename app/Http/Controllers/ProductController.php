@@ -15,4 +15,13 @@ class ProductController extends Controller
     // print_r($products);
         return view('products.index', compact('products'));
     }
+
+    public function view($id){
+        $product = Product::find($id);
+    //    echo "<pre>";
+    //     print_r($product);
+    //     echo "</pre>";
+       return view('products.productsView', compact('product'));
+
+    }
 }
